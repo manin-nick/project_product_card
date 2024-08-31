@@ -110,7 +110,7 @@
 .prices {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center; лишнее*/
     margin-top: 29px;
 }
 
@@ -137,15 +137,19 @@
 }
 
 .add_to_card {
+    display: flex; /*не указал*/
     border-radius: 8px;
     background: var(--main-color); /*будет переменная*/
     margin-top: 30px;
-    width: auto;
+    /*width: auto; лишнее*/
     height: 48px;
     margin-right: 32px;
     margin-bottom: 32px;
     border: none;
     cursor: pointer;
+    align-items: center; /*не указал*/
+    justify-content: center; /*не указал*/
+    width: 236px;    
 }
 
 .add_to_card:hover {
@@ -161,7 +165,8 @@
     line-height: 17px;
     letter-spacing: 0px;
     text-align: left;
-    padding: 15px 62px 16px 10px;
+    /*padding: 15px 62px 16px 10px; лишнее*/
+    padding-left: 15px;
     
 }
 
@@ -169,5 +174,5 @@
     
     width: 16px;
     height: 16px;
-    margin-left: 63px;
+   /* margin-left: 63px; лишнее*/
 }
